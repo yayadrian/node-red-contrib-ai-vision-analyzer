@@ -1,0 +1,63 @@
+[
+  {
+      "id": "f46004135d791296",
+      "type": "simple-gpt-vision",
+      "z": "e0e3e454efb53b1d",
+      "name": "",
+      "prompt": "何が写っている？",
+      "promptType": "str",
+      "Token": "",
+      "x": 330,
+      "y": 200,
+      "wires": [
+          [
+              "7f940f450d9f5f0e"
+          ]
+      ]
+  },
+  {
+      "id": "7f940f450d9f5f0e",
+      "type": "debug",
+      "z": "e0e3e454efb53b1d",
+      "name": "debug",
+      "active": true,
+      "tosidebar": true,
+      "console": false,
+      "tostatus": false,
+      "complete": "false",
+      "statusVal": "",
+      "statusType": "auto",
+      "x": 520,
+      "y": 200,
+      "wires": []
+  },
+  {
+      "id": "31462176094027ca",
+      "type": "inject",
+      "z": "e0e3e454efb53b1d",
+      "name": "",
+      "props": [
+          {
+              "p": "payload"
+          },
+          {
+              "p": "topic",
+              "vt": "str"
+          }
+      ],
+      "repeat": "",
+      "crontab": "",
+      "once": false,
+      "onceDelay": 0.1,
+      "topic": "",
+      "payload": "https://1.bp.blogspot.com/-5S8rmtezagQ/UnyHakT62TI/AAAAAAAAajc/TsAKmkq0wIE/s800/nihonchizu_area.png",
+      "payloadType": "str",
+      "x": 150,
+      "y": 200,
+      "wires": [
+          [
+              "f46004135d791296"
+          ]
+      ]
+  }
+]
