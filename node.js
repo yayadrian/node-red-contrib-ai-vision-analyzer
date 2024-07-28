@@ -53,7 +53,7 @@ module.exports = (RED) => {
           }
         ];
         const resp = await openai.chat.completions.create({
-          model: 'gpt-4-vision-preview',
+          model: 'gpt-4o',
           max_tokens: 1024,
           messages
         })
