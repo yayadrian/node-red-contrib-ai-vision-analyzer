@@ -1,7 +1,7 @@
 {
   "name": "node-red-contrib-simple-gpt-vision",
   "version": "1.0.0",
-  "description": "GPT-4 Vision APIを使って画像を解析するノードです",
+  "description": "GPT-4 Vision API",
   "main": "node.js",
   "node-red": {
     "version": ">=2.0.0",
@@ -19,13 +19,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gaomar/node-red-contrib-simple-gpt-vision"
+    "url": "git+https://github.com/patrik-malina/node-red-contrib-simple-gpt-vision"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "bugs": {
-    "url": "https://github.com/gaomar/node-red-contrib-simple-gpt-vision/issues"
+    "url": "https://github.com/patrik-malina/node-red-contrib-simple-gpt-vision/issues"
   },
   "keywords": [
     "gpt-4",
