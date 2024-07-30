@@ -3,36 +3,36 @@
 [![downloads](https://img.shields.io/npm/dt/node-red-contrib-simple-gpt-vision.svg)](https://www.npmjs.com/package/node-red-contrib-simple-gpt-vision)
 [![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/HaroldPetersInskipp/node-red-contrib-chatgpt/blob/main/LICENSE)
 
-## 概要
-OpenAIのGPT-4 Vision APIで画像の解析を行うノードです。  
-payloadに解析したい画像を入れると、プロンプトに沿った画像の解析を行います。
+## Overview
+OpenAI GPT-4 Vision API - This is a node that performs image analysis.  
+Enter the image you want to analyze in the payload and it will analyze the image according to the prompts.
 
-例) この画像に何が写っているか教えてください。
+Example: Can you tell me what is in this image?
 
-## インストール
+## Install
 
 ```
-npm i node-red-contrib-simple-gpt-vision
+npm i node-red-contrib-gpt4-vision
 ```
 
 or
 
-AdminタブからInstall
+Install from the Admin tab
 
-## 使い方
-### 入力項目
+## How to use
+### Input items
 
-|項目|説明|
-|--|--|
-|payload|画像のURLかbase64形式を指定します。|
-|OpenAI API Key|OpenAPIのAPIキーを設定します。|
-|prompt|解析するプロンプト|
+|Item          |Description                             |
+|--------------|----------------------------------------|
+|payload       |Specify the image URL or base64 format. |
+|OpenAI API Key|Set the OpenAPI API key.                |
+|prompt        |Prompt to analyze                       |
 
-### 出力項目
+### Output items
 
-|項目|説明|
-|--|--|
-|payload|プロンプトに従った画像の解析結果が返ってきます。|
+|Item   |Description                                                       |
+|-------|------------------------------------------------------------------|
+|payload|The image analysis results according to the prompts are returned. |
 
 
 ## LINK
@@ -43,5 +43,6 @@ AdminタブからInstall
 
 ## release
 
-* 2023/12/13: 初回リリース（v1.0.0）
+* 2023/12/13: 初回リリース（v1.0.0）- original version https://github.com/gaomar/node-red-contrib-simple-gpt-vision. Thanks to gaomar
+* 2024/07/30: Forked version to fix error gpt4-preview not available. Now using gtp-4o
 
