@@ -53,7 +53,7 @@ module.exports = (RED) => {
           }
         ];
         const resp = await openai.chat.completions.create({
-          model: 'gpt-4o',
+          model: 'gpt-4o-mini',
           max_tokens: 1024,
           messages
         })
