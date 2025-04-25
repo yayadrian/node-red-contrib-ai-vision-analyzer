@@ -1,7 +1,7 @@
 [
   {
       "id": "f46004135d791296",
-      "type": "simple-gpt-vision",
+      "type": "gpt-vision",
       "z": "e0e3e454efb53b1d",
       "name": "",
       "prompt": "何が写っている？",

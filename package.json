@@ -1,12 +1,12 @@
 {
-  "name": "node-red-contrib-simple-gpt-vision",
-  "version": "1.0.0",
-  "description": "GPT-4 Vision API",
+  "name": "node-red-contrib-ai-vision-analyzer",
+  "version": "2.0.0",
+  "description": "Using the OpenAI Vision API to generate text from images",
   "main": "node.js",
   "node-red": {
     "version": ">=2.0.0",
     "nodes": {
-      "simple-gpt-vision": "node.js"
+      "ai-vision-analyzer": "node.js"
     }
   },
   "files": [
@@ -19,15 +19,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/patrik-malina/node-red-contrib-simple-gpt-vision"
+    "url": "git+https://github.com/yayadrian/node-red-contrib-ai-vision-analyzer"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "bugs": {
-    "url": "https://github.com/patrik-malina/node-red-contrib-simple-gpt-vision/issues"
+    "url": "https://github.com/yayadrian/node-red-contrib-ai-vision-analyzer/issues"
   },
   "keywords": [
+    "openai",
     "gpt-4",
     "vision api",
     "openai",
@@ -37,7 +38,7 @@
   "directories": {
     "example": "examples"
   },
-  "author": "gaomar",
+  "author": "yayadrian",
   "license": "MIT",
   "dependencies": {
     "openai": "^4.21.0"

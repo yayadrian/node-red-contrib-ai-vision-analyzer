@@ -5,6 +5,7 @@ module.exports = (RED) => {
     this.prompt = config.prompt || [];
     this.promptType = config.promptType || "str";
     this.Token = config.Token || "";
+    this.model = config.model || "gpt-4o-mini";
     const node = this;
 
     const openai = new OpenAI({
@@ -12,7 +13,7 @@ module.exports = (RED) => {
     });
 
     node.on("input", async (msg) => {
-      node.status({ fill: "green", shape: "dot", text: "処理中..." });
+      node.status({ fill: "green", shape: "dot", text: "processing..." });
       try {
         let prompt = "";
         RED.util.evaluateNodeProperty(
@@ -34,7 +35,7 @@ module.exports = (RED) => {
         const messages = [
           {
             role: "system",
-            content: "lang:ja"
+            content: "lang:en"
           },
           {
             role: "user",
@@ -53,7 +54,7 @@ module.exports = (RED) => {
           }
         ];
         const resp = await openai.chat.completions.create({
-          model: 'gpt-4o-mini',
+          model: node.model,
           max_tokens: 1024,
           messages
         })
@@ -84,5 +85,5 @@ module.exports = (RED) => {
     });
   };
 
-  RED.nodes.registerType("simple-gpt-vision", main);
+  RED.nodes.registerType("gpt-vision", main);
 };
